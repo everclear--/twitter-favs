@@ -38,8 +38,8 @@ if __name__ == '__main__':
             user_screen_name = fav['user']['screen_name']
             link_url = 'http://twitter.com/{}/statuses/{}'.format(user_id, tweet_id)
             max_id = int(tweet_id) - 1
-            print text
-            print "@{}".format(user_screen_name)
+            print text.encode('utf-8')
+            print "@{}".format(user_screen_name).encode('utf-8')
             print link_url
             print created_at
             print ''
